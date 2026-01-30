@@ -15,7 +15,7 @@ _This module imports a function to manage VSCode extensions via PowerShell on wi
 1. [How to use](#how-to-use)
     1. [How to Import](#how-to-import)
     1. [Using the function](#using-the-function)
-1. [LICENSE](#license)
+1. [License](#license)
 
 ## Introduction
 
@@ -77,11 +77,11 @@ $env:PSModulePath
 
 After the module is imported, the function ```Set-VSCodeExtensionPolicy``` will be available.
 
-The following shows how to configure the allowed extensions for all users on the current device:
+The following example shows how to configure the allowed extensions for all users on the current device:
 
 ```PS
 # Set allowed publishers of VSCode extensions.
-Set-VSCodeExtensionPolicy -AllowedPublishers "microsoft"-SystemContext -Verbose
+Set-VSCodeExtensionPolicy -AllowedPublishers "microsoft" -SystemContext -Verbose
 
 # Registry values set
 extensions.allowed          : {"microsoft":true}
@@ -90,7 +90,7 @@ extensions.autoCheckUpdates : 0
 extensions.gallery.enabled  : 1
 ```
 
-## LICENSE
+## License
 
 [MIT][License]
 
