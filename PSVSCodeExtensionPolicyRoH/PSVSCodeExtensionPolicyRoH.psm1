@@ -9,7 +9,7 @@ function Set-VSCodeExtensionPolicy {
     In systemcontext the extensions have to be explicitely enabled, all other extensions are 
     denied when the "AllowedExtensions" key is set.
 
-    For example (only applies to system installations ov VSCode):
+    For example (only applies to system installations of VSCode):
     
     Allow extensions of a publisher and deny all other. 
     {"IT-Administrators": true}
