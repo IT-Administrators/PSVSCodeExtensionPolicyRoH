@@ -81,13 +81,10 @@ The following example shows how to configure the allowed extensions for all user
 
 ```PS
 # Set allowed publishers of VSCode extensions.
-Set-VSCodeExtensionPolicy -AllowedPublishers "microsoft" -SystemContext -Verbose
+Set-VSCodeExtensionPolicy -AddAllowed "microsoft" -SystemContext -Verbose
 
 # Registry values set
-extensions.allowed          : {"microsoft":true}
-extensions.autoUpdate       : 0
-extensions.autoCheckUpdates : 0
-extensions.gallery.enabled  : 1
+AllowedExtensions : {"microsoft":true}
 ```
 
 ## License
